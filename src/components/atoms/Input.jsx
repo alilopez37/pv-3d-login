@@ -11,8 +11,13 @@ const InputStyled = styled.input`
 `;
 
 function Input(props) {
+
+    const handlerOnChange = (event) => {
+        props.fnVal(event.target.value)
+    }
+
     return(
-        <InputStyled type={props.type} placeholder={props.placeholder}/>
+        <InputStyled type={props.type} placeholder={props.placeholder} value={props.val} onChange={handlerOnChange}/>
     )
 }
 

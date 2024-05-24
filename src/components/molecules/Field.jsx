@@ -8,7 +8,7 @@ function Field(props) {
                 <Label text={props.text}/>
             </div>
             <div>
-                <Input type={props.type} placeholder={props.placeholder}/>
+                <Input type={props.type} placeholder={props.placeholder} val={props.val} fnVal={props.fnVal}/>
             </div>
         </div>
       );

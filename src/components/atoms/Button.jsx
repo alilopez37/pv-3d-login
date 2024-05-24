@@ -14,9 +14,9 @@ const ButtonStyled = styled.button`
     }
 `;
 
-function Button(){
+function Button({title, onclick}){
     return(
-        <ButtonStyled>Iniciar sesión</ButtonStyled>
+        <ButtonStyled onClick={onclick}>{title}</ButtonStyled>
     )
 }
 
